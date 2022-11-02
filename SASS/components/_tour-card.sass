@@ -3,6 +3,11 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
+<<<<<<< HEAD
+=======
+    @media only screen and (max-width: 900px), (hover:none)
+        height: auto
+>>>>>>> responsive
     
     &__side
         height: 50rem
@@ -16,17 +21,42 @@
         box-shadow: $box-shadow
         border-radius: .5rem
         overflow: hidden
+<<<<<<< HEAD
         
         &_front
+=======
+        @media only screen and (max-width: 900px), (hover:none)
+            height: auto
+            position: relative
+        
+        &_front
+            @media only screen and (max-width: 900px), (hover:none)
+                padding-bottom: 13rem
+>>>>>>> responsive
 
         &_back
             background: green
             transform: rotateY(180deg)
             background: linear-gradient(120deg, $color-brown-light, $color-brown-dark)
+<<<<<<< HEAD
+=======
+            @media only screen and (max-width: 900px), (hover:none)
+                transform: rotateY(0deg)
+                padding: 5rem
+                padding-top: 12rem
+                margin-top: -11rem
+                clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%)
+
+>>>>>>> responsive
 
 
     &:hover &__side_front
         transform: rotateY(-180deg)
+<<<<<<< HEAD
+=======
+        @include respond(tab-port)
+            transform: rotateY(0deg)
+>>>>>>> responsive
     &:hover &__side_back
         transform: rotateY(0deg)
 
@@ -40,6 +70,11 @@
             background: $color-brown-light url(../img/card-2.jpg) center / cover no-repeat
         &_3
             background: $color-brown-light url(../img/card-3.jpg) center / cover no-repeat
+<<<<<<< HEAD
+=======
+        @media only screen and (max-width: 900px), (hover:none)
+            height: 30rem
+>>>>>>> responsive
 
     &__title
         font-size: 2.8rem
@@ -50,6 +85,13 @@
         position: absolute
         top: 17rem
         right: 0rem
+<<<<<<< HEAD
+=======
+        @include respond(tab-port)
+            top: 25rem
+            font-size: 3.8rem
+
+>>>>>>> responsive
     &__span
         background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
         padding: 1rem 2rem .3rem 2rem
@@ -60,6 +102,11 @@
             right: 0
             padding-bottom: 1rem
             padding-top: 0rem
+<<<<<<< HEAD
+=======
+            @include respond(tab-port)
+                top: 4.4rem
+>>>>>>> responsive
     
     &__descr
         ul
@@ -76,12 +123,30 @@
                 display: inline-block
                 &:not(:last-child)
                     margin-bottom: 2rem
+<<<<<<< HEAD
+=======
+                @include respond(tab-land)
+                    font-size: 1.5rem
+                @include respond(tab-port)
+                    font-size: 2rem
+
+>>>>>>> responsive
 
     &__backSide-box
         position: absolute
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
+<<<<<<< HEAD
+=======
+        @media only screen and (max-width: 900px), (hover:none)
+            position: relative
+            top: 0%
+            left: 0%
+            transform: translate(0%, 0%)
+            text-align: center
+
+>>>>>>> responsive
     &__text
         margin-bottom: 8rem
         letter-spacing: .2rem

@@ -5,8 +5,19 @@
     margin: 0 auto
     padding: 6rem
     transform: skewX(330deg)
+<<<<<<< HEAD
     & > *
         transform: skewX(-330deg)
+=======
+    @include respond(tab-port)
+        transform: skewX(350deg)
+        padding: 3rem
+    & > *
+        transform: skewX(-330deg)
+        @include respond(tab-port)
+            transform: skewX(-350deg)
+            text-align: center
+>>>>>>> responsive
     &__img
         width: 15rem
         height: 15rem
@@ -18,10 +29,22 @@
         margin-right: 4rem
         overflow: hidden
         position: relative
+<<<<<<< HEAD
+=======
+        @include respond(tab-port)
+            float: none
+            margin: 0 auto
+            margin-bottom: 3rem
+>>>>>>> responsive
         img
             height: 100%
             transform: scale(1.2)
             transition: all .5s
+<<<<<<< HEAD
+=======
+            
+
+>>>>>>> responsive
     &__name
         font-size: 2rem
         letter-spacing: .2rem
